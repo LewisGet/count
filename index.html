@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>count</title>
+</head>
+<style>
+body
+{
+    line-height:300px;
+    background-color: #00ff00;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 15em;
+}
+
+button
+{
+    font-size: 5em;
+}
+
+</style>
+<body>
+<h1 id="main">0</h1>
+<button onclick="add()">add</button>
+
+<script type="text/javascript">
+    var add = function () {
+        var main = document.getElementById("main");
+
+        var now_number = parseInt(main.innerText);
+
+        now_number++;
+
+        main.innerText = now_number;
+    };
+</script>
+</body>
+</html>
